@@ -198,7 +198,35 @@ td,th {
       </pre>
     </p>
 
+    <h2> Conference Presentation: The Challenges and Benefits of Fully Electric Aircraft </h2>
+    <script>
+     var slideImages = {"slide1.jpg"};
+     var current slide = 0;
+    
+    function showSlide() {
+      document.getElemenyById('slide').src = SlideImages[currentSlide];
+    }
 
+    function nextSlide() {
+      currentSlide = (currentSlide + 1) % slideImages.length;
+      showSlide();
+    }
+
+    function prevSlide() {
+      currentslide = (currentslide - 1 + slideImages.length) % slideImages.length;
+      showSlide();
+    }
+
+    function showSlideNumber(slideNumber) {
+      currentSlide = slideNumber - 1;
+      showslide();
+    }
+
+      showSlide();
+    </script>
+   
+    
+    
 
     
     
