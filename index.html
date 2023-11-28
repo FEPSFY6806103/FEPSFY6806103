@@ -200,11 +200,11 @@ td,th {
 
     <h2> Conference Presentation: The Challenges and Benefits of Fully Electric Aircraft </h2>
     <script>
-     var slideImages = {"Slide1.jpg"};
+     var slideImages = ["Slide1.jpg"];
      var currentSlide = 0;
     
     function showSlide() {
-      document.getElementById('slide').src = SlideImages[currentSlide];
+      document.getElementById('slide').src = slideImages[currentSlide];
     }
 
     function nextSlide() {
@@ -213,13 +213,13 @@ td,th {
     }
 
     function prevSlide() {
-      currentslide = (currentslide - 1 + slideImages.length) % slideImages.length;
+      currentSlide = (currentSlide - 1 + slideImages.length) % slideImages.length;
       showSlide();
     }
 
     function showSlideNumber(slideNumber) {
       currentSlide = slideNumber - 1;
-      showslide();
+      showSlide();
     }
 
       showSlide();
